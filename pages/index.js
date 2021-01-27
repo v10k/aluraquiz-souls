@@ -1,11 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import React from 'react';
+
 import db from '../db.json';
-import {Head} from '../src/components/Header'
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import InputField from '../src/components/InputField';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -21,7 +23,6 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-    <Head />
       <QuizContainer>
         <QuizLogo />
         <Widget>
@@ -30,6 +31,7 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
+            <InputField />
           </Widget.Content>
         </Widget>
 
@@ -41,7 +43,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/v10k"/>
+      <GitHubCorner projectUrl="https://github.com/v10k" />
     </QuizBackground>
   );
 }

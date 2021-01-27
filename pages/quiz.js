@@ -1,10 +1,13 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import React from 'react';
+import { useRouter } from 'next/router';
+
+import Widget from '../src/components/Widget';
+import QuizLogo from '../src/components/QuizLogo';
+import QuizBackground from '../src/components/QuizBackground';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
 import db from '../db.json';
-import Widget from '../src/components/Widget'
-import QuizLogo from '../src/components/QuizLogo'
-import QuizBackground from '../src/components/QuizBackground'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -17,12 +20,30 @@ export const QuizContainer = styled.div`
   }
 `;
 
-export default function Home() {
+export default function QuizPage() {
+  const router = useRouter();
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
-        <h1>Página de Quiz</h1>
+        <QuizLogo />
+        <Widget>
+          <Widget.Header>
+            <h1>{ router.query.name }</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <p>{db.description}</p>
+          </Widget.Content>
+        </Widget>
+
+        <Widget>
+          <Widget.Content>
+            <h1>Quizes da Galera</h1>
+            <p>lorem ipsum dolor sit amet...</p>
+          </Widget.Content>
+        </Widget>
+        <Footer />
       </QuizContainer>
+      <GitHubCorner projectUrl="https://github.com/v10k" />
     </QuizBackground>
   );
 }

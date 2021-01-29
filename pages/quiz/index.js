@@ -1,14 +1,15 @@
 import React from 'react';
 import uuid from 'react-uuid';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
-import LoadingSpinner from '../src/components/LoadingSpinner';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import Button from '../../src/components/Button';
+import LoadingSpinner from '../../src/components/LoadingSpinner';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
 
 const screenStates = {
   QUIZ: 'QUIZ',
@@ -135,6 +136,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
@@ -144,7 +146,7 @@ function QuestionWidget({
         alt="Descrição"
         style={{
           width: '100%',
-          height: '150px',
+          height: '300px',
           objectFit: 'cover',
         }}
         src={question.image}

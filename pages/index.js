@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
 import { useRouter } from 'next/router';
+import uuid from 'react-uuid';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget';
@@ -10,6 +12,7 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
 import Button from '../src/components/Button';
+import Link from '../src/components/Link';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -30,13 +33,22 @@ export default function Home() {
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
             <p>{db.description}</p>
-            <form onSubmit={function (infosDoEvento) {
+            <form onSubmit={function StarQuiz(infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
             }}
@@ -54,13 +66,50 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-            <p>lorem ipsum dolor sit amet...</p>
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, gitHubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={uuid()}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${gitHubUser}`}
+                    >
+                      {`${gitHubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </li>
+                );
+              })}
+            </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.footer}
+          transition={{ delay: 1, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/v10k" />
     </QuizBackground>

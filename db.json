@@ -4,7 +4,7 @@
     "description": "Teste os seus conhecimentos sobre a série souls e veja se morreu o suficiente para aprender.",
     "questions": [
       {
-        "image": "https://darksouls.wdfiles.com/local--files/bosses/ornstein-smough-large.jpg",
+        "image": "https://thumbs.gfycat.com/HarmlessIlliterateAmericanshorthair-max-1mb.gif",
         "title": "Qual o nome desses chefões de Dark Souls 1?",
         "description": "Com certeza te causaram pesadelos.",
         "answer": 2,
@@ -16,18 +16,117 @@
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://i.ytimg.com/vi/MFsdwRoST5Q/maxresdefault.jpg",
+        "title": "Qual o primeiro chefe de dark souls 1 ?",
+        "description": "O primeiro a gente nunca esquece",
+        "answer": 1,
+        "alternatives": [
+           "Taurus Demon",
+           "Asylum Demon",
+           "Manus",
+           "Capra Demon"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/ea/35/08/ea3508c855f32def230614277bd62cc8.jpg",
+        "title": "Um NPC bloqueia a entrada do corredor para acessar a irmã de Quelaag. Qual o nome desse npc?",
+        "description": "Essa é difícil",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Eingyi",
+          "Maneater Mildred",
+          "Ingward",
+          "Oswald of Carim"
+        ]
+      },
+      {
+        "image": "https://steamuserimages-a.akamaihd.net/ugc/705109836865301329/904C72242367AF4B661B614ECB12708464700CD6/?imw=512&imh=320&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "title": "O item Crest of Artorias é vendido por qual NPC em Dark Souls 1?",
+        "description": "Abre a porta pra enfrentar um certo chefe em um certo cemitério...",
+        "answer": 0,
+        "alternatives": [
+          "Andre of Astora",
+          "Big Hat Logan",
+          "Rickert of Vinheim",
+          "Giant Blacksmith"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/61/df/bb/61dfbb72140747bdb0ee13e3123d6da6.png",
+        "title": "Qual o nome desse boss de Dark Souls 2?",
+        "description": "Essa é fácil",
+        "answer": 3,
+        "alternatives": [
+          "Nashandra",
+          "Quelaag",
+          "Lost Sinner",
+          "Scorpioness Najka"
+        ]
+      },
+      {
+        "image": "https://i.ytimg.com/vi/vtkB8e5V9pM/maxresdefault.jpg",
+        "title": "Qual desses dragões você enfrenta em Dark Souls 2?",
+        "description": "Não foi uma luta tão legal quanto outras",
+        "answer": 2,
+        "alternatives": [
+          "Seath the Scaleless",
+          "Kalameet",
+          "Sinh, the Slumbering Dragon",
+          "Darkeater Midir"
+        ]
+      },
+      {
+        "image": "https://gamercomoagente.files.wordpress.com/2015/09/scholar-1.jpg",
+        "title": "Em que ano foi lançado o jogo Dark Souls 2 em sua versão mais completa 'Scholar of the First Sin'?",
+        "description": "Hora de chutar",
+        "answer": 2,
+        "alternatives": [
+          "2013",
+          "2014",
+          "2015",
+          "2016"
+        ]
+      },
+      {
+        "image": "https://tecnoblog.net/meiobit/wp-content/uploads/2016/05/20160511dark-souls-3.jpg",
+        "title": "Em Dark Souls 3, cada arma branca tem quantos tipos BÁSICOS de ataques?",
+        "description": "Leia pelo menos 2x a pergunta",
+        "answer": 3,
+        "alternatives": [
+          "3",
+          "6",
+          "4",
+          "2"
+        ]
+      },
+      {
+        "image": "https://i1.wp.com/www.selectgame.com.br/wp-content/uploads/2020/05/Dark-Souls-III-Irithyll-do-Vale-Boreal-Screenshot-04.jpg?fit=1456%2C819&ssl=1",
+        "title": "Qual o nome dessa cidade?",
+        "description": "Provavelmente você já usou de wallpaper.",
+        "answer": 0,
+        "alternatives": [
+          "Irithyll of the Boreal Valley",
+          "Anor Londo",
+          "High Wall of Lothric",
+          "New Londo Ruins"
+        ]
+      },
+      {
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de8eb074-c21e-4e7d-8e96-12b2fcf568a3/dcuig56-d8375144-8b95-41b6-bb4e-ab4f528c4083.png/v1/fill/w_1600,h_2165,q_80,strp/praise_the_sun_by_emeriwatson_dcuig56-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0yMTY1IiwicGF0aCI6IlwvZlwvZGU4ZWIwNzQtYzIxZS00ZTdkLThlOTYtMTJiMmZjZjU2OGEzXC9kY3VpZzU2LWQ4Mzc1MTQ0LThiOTUtNDFiNi1iYjRlLWFiNGY1MjhjNDA4My5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.q1_5IOyJt_MMEBQRr7TRmuFmZiOSmlUfYD4w6yqSFEA",
+        "title": "Qual NPC Diz a icônica frase: 'Praise the sun'? ",
+        "description": "Um dos personagens mais queridos até hoje.",
+        "answer": 1,
+        "alternatives": [
+          "Big Hat Logan",
+          "Solaire of Astora",
+          "Siegmeyer of Catarina",
+          "Gwyn Lord of Cinder"
         ]
       }
     ],
     "external": [
-      ""
+      "https://aluraquiz-css.omariosouto.vercel.app/",
+      "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

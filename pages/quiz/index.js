@@ -187,6 +187,7 @@ function QuestionWidget({
                   id={alternativeId}
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
+                  checked={selectedAlternative === alternativeIndex}
                   type="radio"
                 />
                 {alternative}

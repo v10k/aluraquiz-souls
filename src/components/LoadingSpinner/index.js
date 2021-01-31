@@ -6,7 +6,7 @@ import db from '../../../db.json';
 const Div = styled.div`
   display: flex;
   margin: 1em 1em;
-  height: 40px;
+  height: 4vh;
 `;
 
 const LoadingSpinner = () => (
